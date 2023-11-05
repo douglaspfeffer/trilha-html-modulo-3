@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+
+    <header id="header">
+            <div class="logo">
+                <a href="./index.html"><img src="./assets/images/logo.png" alt="Logo do site Anime Search"/></a>
+            </div>
+    </header>
+
+    <section class="bar"></section>
+
+    <div class="content">
+        <nav class="sidebar">
+            <h2>Animes</h2>
+            <ul>
+                <li><a href="./bleach.html">Bleach</a></li>
+                <li><a href="./dragonball.html">Dragon Ball</a></li>
+                <li><a href="./onepiece.html">One Piece</a></li>
+            </ul>
+        </nav>
+
+        <main class="main">
+            <h1 id="title1">Entre em contato</h1>
+            <p>Caso tenha interesse em trabalhar conosco, preencha o formulário abaixo e anexe o seu CV.</p>
+            <form name="contact" method="get" autocomplete="on" onsubmit="alert('Envio realizado com Sucesso!');" action="">
+                <fieldset>
+                    <legend>Dados Pessoais*</legend>
+                    <div class="row">
+                        <label for="">Nome:</label><input placeholder="Ex: John Doe" type="text" name="" id="" autofocus required>
+                        <label for="">E-mail:</label><input placeholder="Ex: johndoe@email.com" type="email" name="" id="" required>
+                        <label for="">Telefone:</label><input placeholder="Ex: +5511999999999" type="number" name="" id="" required>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Sexo*</legend>
+                    <input type="radio" name="sexo" value="masculino" required>Masculino<br>
+                    <input type="radio" name="sexo" value="feminino" required>Feminino<br>
+                    <input type="radio" name="sexo" value="naoresponder" required>Prefiro não responder<br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Linguagem / Tecnologias conhecidas</legend>
+                    <input type="checkbox" name="conhecimento[]" value="html"> HTML<br>
+                    <input type="checkbox" name="conhecimento[]" value="css"> CSS<br>
+                    <input type="checkbox" name="conhecimento[]" value="javascript"> JavaScript<br>
+                </fieldset>
+
+                <fieldset>
+                    <div class="row">
+                        <label for="">Mensagem:*</label>
+                        <textarea placeholder="Digite no mínimo 10 caracteres e no máximo 250." minlength="10" maxlength="250" name="message" id="" cols="30" rows="10" required></textarea>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Arquivo:*</legend>
+                    <label for=""><input type="file" multiple required></label><br>
+                </fieldset>
+
+                <div class="row">
+                    <button type="reset">Limpar</button>
+                    <button type="submit">Enviar Formulário</button>
+                </div>
+            </form>
+        </main>
+
+        <nav class="anchors">
+            <h2>Neste Artigo</h2>
+            <ul>
+                <li><a href="#title1">Entre em contato</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <a href="#header"><button class="toTop">▲</button></a>
+
+    <footer>
+        <div class="footer">
+            <ul>
+                <li><a href="./index.html">Página Inicial</a></li>
+                <li><a href="./contato.html">Fale Conosco</a></li>
+                <li><a href="./sobre.html">Sobre o Projeto Anime Search</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
